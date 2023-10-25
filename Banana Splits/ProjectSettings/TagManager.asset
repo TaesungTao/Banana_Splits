@@ -9,6 +9,8 @@ TagManager:
   - Manager
   - Barrier
   - GateOne
+  - WallClimb
+  - GateOneFinish
   layers:
   - Default
   - TransparentFX

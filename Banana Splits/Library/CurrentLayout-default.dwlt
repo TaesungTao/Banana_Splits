@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1523.2001
     height: 761.2
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 58
+  controlID: 38
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 106
+  controlID: 39
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 107
+  controlID: 40
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -379,22 +379,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/MyScripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/MyScripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Taesung\Documents\GitHub\Banana_Splits\Banana Splits
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4a450000
-    m_LastClickedID: 17738
-    m_ExpandedIDs: 00000000384500003a4500003c4500003e4500004045000000ca9a3b
+    m_SelectedIDs: 48440000
+    m_LastClickedID: 17480
+    m_ExpandedIDs: 000000003a4400003c4400003e440000404400004244000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -422,7 +422,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000384500003a4500003c4500003e45000040450000
+    m_ExpandedIDs: 000000003a4400003c4400003e4400004044000042440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -543,23 +543,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f8930000
-      m_LastClickedID: 37880
-      m_ExpandedIDs: 18d6ffff2ad6ffff3cd6ffff50d6ffff62d6ffff74d6ffff8ad6ffff84d7ffffa6d8ffffead8ffff4ed9ffffe4d9ffff7cdbfffff6dbffffe0deffff08dfffff1adfffff2adfffff8cdfffff18e1ffff28e2ffff4ce2ffff08f0ffff76f0ffff96f9ffffecf9ffff62fbffffb8790000707a0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c4cbffff7cceffffa0d1fffff6d1ffff1cd4ffff7ad4ffff4cd7ffffd6d9ffff92deffff88f6ffff52f7ffffa6f7fffff6f7ffff0af8ffff1cf8ffff2ef8ffff48f8ffff7af8ffffa6f8ffffd8f8ffff02f9ffff72f9ffff1efaffff48faffff54faffff60faffff62fbffff76a4000002a7000034a90000eea90000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Square
-        m_OriginalName: Square
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -8478
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -605,9 +605,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.395397, y: 4.0577874, z: -20.205086}
+    m_Target: {x: 66.10498, y: 85.50833, z: -14.7902975}
     speed: 2
-    m_Value: {x: 10.58187, y: 4.1064706, z: -20.149675}
+    m_Value: {x: 66.10498, y: 85.50833, z: -14.7902975}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -658,9 +658,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.699191
+    m_Target: 107.91461
     speed: 2
-    m_Value: 15.391823
+    m_Value: 107.91461
   m_Ortho:
     m_Target: 1
     speed: 2

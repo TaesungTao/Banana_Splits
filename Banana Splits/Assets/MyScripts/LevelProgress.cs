@@ -11,14 +11,29 @@ public class LevelProgress : MonoBehaviour
         if (collision.gameObject.tag == "WallClimb")
         {
             Manager.Instance.WallUp++;
+            Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "Dash")
         {
             Manager.Instance.DashUp++;
+            Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "DoubleJump")
         {
-            Manager.Instance.JumpUp++;
+            Manager.Instance.DoubleJumpUp++;
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.tag == "GateOneFinish")
+        {
+            Manager.Instance.FinishOne++;
+        }
+        if (collision.gameObject.tag == "GameTwoFinish")
+        {
+            Manager.Instance.FinishTwo++;
+        }
+        if (collision.gameObject.tag == "GameThreeFinish")
+        {
+            Manager.Instance.FinishThree++;
         }
     }
 }

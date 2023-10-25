@@ -8,9 +8,12 @@ class Manager : MonoBehaviour
     public int livesHad = 3;
     public int prizesCounted = 0;
     public int Speed = 50;
-    public int WallUp = 1;
-    public int DashUp = 1;
-    public int JumpUp = 1;
+    public int WallUp = 0;
+    public int DashUp = 0;
+    public int DoubleJumpUp = 0;
+    public int FinishOne = 0;
+    public int FinishTwo = 0;
+    public int FinishThree = 0;
     public static Manager Instance { get; private set; }
     
     private void Awake()

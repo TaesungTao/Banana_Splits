@@ -11,12 +11,15 @@ public class Movement : MonoBehaviour
    // [Range(0, 100f)] [SerializeField] private float speed = 50f;
  
     float horizontal = 0f;
+    float vertical = 0f;
     private bool isFacingRight = true;
     bool jump = false, jumpHeld = false;
-    int doubleJump = 0;
+    public int doubleJump = 0;
     bool wallJump = false;
     bool dash = false;
+    bool climb = false;
     public float dashSpeed = 15f;
+    public float climbSpeed = 15f;
     public Animator anim;
  
     [Range(0, 10f)] [SerializeField] private float fallLongMult = 0.85f;
@@ -34,6 +37,7 @@ public class Movement : MonoBehaviour
     // horizontal movement 
     horizontal = Input.GetAxisRaw("Horizontal") * Manager.Instance.Speed;
     anim.SetFloat("speed", Mathf.Abs(horizontal));
+    vertical = Input.GetAxisRaw("Vertical") * Manager.Instance.Speed;
     //jump detectors
     if (isOnGround())
     {
@@ -54,14 +58,17 @@ public class Movement : MonoBehaviour
     {
         anim.SetBool("isClinging", false);
     }
-    if (Input.GetButtonDown("Jump") && doubleJump < 1 && Manager.Instance.WallUp >= 1) {
+    if (Input.GetButtonDown("Jump")) {
+        if (doubleJump <1 && Manager.Instance.DoubleJumpUp >= 1)
+        {
         jump = true;
-        doubleJump++;
+        }
+        if (isOnGround() && Manager.Instance.DoubleJumpUp == 0)
+        {
+            jump = true;
+        }
     }
     jumpHeld = (!isOnGround() && Input.GetButton("Jump")) ? true : false; 
-
-    //wall jump detector 
-    if (isOnWall() && Manager.Instance.WallUp >= 1 && Input.GetButtonDown("Jump")) wallJump = true;
 
     if (Input.GetKeyDown(KeyCode.LeftShift)) {
         dash = true;
@@ -72,16 +79,31 @@ if (Input.GetKeyUp(KeyCode.LeftShift)){
     dash = false;
     anim.SetBool("isDashing", false);
 }
+if (Input.GetKeyDown(KeyCode.W) && Manager.Instance.WallUp >= 1 && isOnWall()){
+    climb = true;
+}
+if (Input.GetKeyUp(KeyCode.W)){
+    climb = false;
+}
+if (!isOnWall())
+{
+    climb = false;
+}
 }
  
 void FixedUpdate()
 {
     float moveFactor = horizontal * Time.fixedDeltaTime;
+    float vertFactor = vertical * Time.fixedDeltaTime;
+
     if (!dash){
         dashSpeed = 15f;
     }
     else {
         dashSpeed = 20f;
+    }
+    if (climb){
+    rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, vertFactor * climbSpeed);
     }
  
     // Movement...
@@ -95,6 +117,7 @@ void FixedUpdate()
         float jumpvel = 17f;
         rigidBody2D.velocity = Vector2.up * jumpvel;
         jump = false;
+        doubleJump++;
     }
     // Jumping High...
     if(jumpHeld && rigidBody2D.velocity.y > 0)
@@ -107,16 +130,6 @@ void FixedUpdate()
         rigidBody2D.velocity += Vector2.up * Physics2D.gravity.y * (fallShortMult - 2) * Time.fixedDeltaTime;
     }
 
-    if(wallJump) 
-    {
-        float wallvel = 17f;
-        float wallFactor = horizontal * Time.fixedDeltaTime;
-        rigidBody2D.velocity = Vector2.up * wallvel;
-        rigidBody2D.velocity = new Vector2(wallFactor * 10f, rigidBody2D.velocity.y);
-        wallJump = false;
-    }
-
-    //wall jump enabled
 }
 private void flipSprite()
 {
