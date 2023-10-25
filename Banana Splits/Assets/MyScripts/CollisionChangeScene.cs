@@ -10,14 +10,8 @@ public class CollisionChangeScene : MonoBehaviour
     // followed a unity tutorial on scene change
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "GateOne"){
+        if (collision.gameObject.tag == "Player"){
         ChangeScenes(sceneID);
-        }
-        if (collision.gameObject.tag == "GateTwo"){
-            ChangeScenes(sceneID);
-        }
-        if (collision.gameObject.tag == "GateThree"){
-            ChangeScenes(sceneID);
         }
     }
     public void ChangeScenes(int sceneID)
