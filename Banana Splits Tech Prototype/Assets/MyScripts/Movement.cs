@@ -51,6 +51,10 @@ public class Movement : MonoBehaviour
     }
     if (isOnWall())
     {
+        if (Manager.Instance.DoubleJumpUp >= 1)
+        {
+            doubleJump = 0;
+        }
         anim.SetBool("isClinging", true);
 
     }

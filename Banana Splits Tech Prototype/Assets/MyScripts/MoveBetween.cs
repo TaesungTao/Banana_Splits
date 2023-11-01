@@ -4,7 +4,8 @@
     
     public class MoveBetween : MonoBehaviour
 
-    // the following script was adjusted from transform.position
+    // the following script was adjusted from a few unity tutorials regarding transform.position
+    // and a tutorial I found on YouTube about how to script waypoints from Sleepy Lava
     // it uses two "waypoints" which are just transparent square sprites in my scene
     // and makes the "enemy" move between them
     {

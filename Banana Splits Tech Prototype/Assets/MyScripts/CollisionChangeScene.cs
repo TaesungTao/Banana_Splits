@@ -20,8 +20,8 @@ public class CollisionChangeScene : MonoBehaviour
         if (collision.attachedRigidbody){
             DoorChange.enabled = true;
             if (Input.GetKey(KeyCode.Return)){
-                DoorChange.enabled = false;
         ChangeScenes(sceneID);
+                DoorChange.enabled = false;
         }
         }
     }
