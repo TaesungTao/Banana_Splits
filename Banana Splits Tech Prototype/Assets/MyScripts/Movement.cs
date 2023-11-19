@@ -97,8 +97,8 @@ if (!isOnWall())
  
 void FixedUpdate()
 {
-    float moveFactor = horizontal * Time.fixedDeltaTime;
-    float vertFactor = vertical * Time.fixedDeltaTime;
+    Manager.Instance.moveFactor = horizontal * Time.fixedDeltaTime;
+    Manager.Instance.vertFactor = vertical * Time.fixedDeltaTime;
 
     if (!dash){
         dashSpeed = 15f;
@@ -107,14 +107,14 @@ void FixedUpdate()
         dashSpeed = 20f;
     }
     if (climb){
-    rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, vertFactor * climbSpeed);
+    rigidBody2D.velocity = new Vector2(rigidBody2D.velocity.x, Manager.Instance.vertFactor * climbSpeed);
     }
  
     // Movement...
-    rigidBody2D.velocity = new Vector2(moveFactor * dashSpeed, rigidBody2D.velocity.y);
+    rigidBody2D.velocity = new Vector2(Manager.Instance.moveFactor * dashSpeed, rigidBody2D.velocity.y);
     //Flip the sprite 
-    if (moveFactor > 0 && !isFacingRight) flipSprite();
-    else if (moveFactor < 0 && isFacingRight) flipSprite();
+    if (Manager.Instance.moveFactor > 0 && !isFacingRight) flipSprite();
+    else if (Manager.Instance.moveFactor < 0 && isFacingRight) flipSprite();
      // Jumping...
      if (jump)
     {

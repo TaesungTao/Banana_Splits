@@ -14,6 +14,8 @@ class Manager : MonoBehaviour
     public int FinishOne = 0;
     public int FinishTwo = 0;
     public int FinishThree = 0;
+    public float moveFactor;
+    public float vertFactor;
     public static Manager Instance { get; private set; }
     
     private void Awake()
