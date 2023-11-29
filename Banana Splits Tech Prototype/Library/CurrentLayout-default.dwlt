@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1536
     height: 774
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 108
+  controlID: 105
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -379,13 +379,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/MyScripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/MyScripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Taesung\Documents\GitHub\Banana_Splits\Banana Splits
     Tech Prototype
@@ -393,8 +393,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c4a0000
-    m_LastClickedID: 18988
+    m_SelectedIDs: 284a0000
+    m_LastClickedID: 18984
     m_ExpandedIDs: 000000001a4a00001c4a00001e4a0000204a0000224a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -511,7 +511,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 181.60004
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -544,9 +544,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 26f5ffff3ef5ffff44f5ffff4cf5ffff54f5ffff5cf5ffff94f5ffff44f6ffff64f6ffffcef6ffffe0f6fffff2f6ffff1af7ffff48f7ffffbef7ffff74f8ffff8cf8ffff50f9ffff5ef9ffff6ef9ffff76f9ffff86faffff62fbffff74750000
+      m_SelectedIDs: 1cf8ffff
+      m_LastClickedID: -2020
+      m_ExpandedIDs: 62fbffff84430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -606,9 +606,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: -10}
+    m_Target: {x: 3.076649, y: 0.8725435, z: -20.404018}
     speed: 2
-    m_Value: {x: -0.00000006376521, y: 0.000000017338337, z: -9.999992}
+    m_Value: {x: 3.5687816, y: 0.8953387, z: -20.326027}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -659,9 +659,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 18.111526
     speed: 2
-    m_Value: 12.124355
+    m_Value: 17.331604
   m_Ortho:
     m_Target: 1
     speed: 2
