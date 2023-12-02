@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - WallClimb
+  - Enemy
+  - GateOneFinish
+  - GateTwoFinish
+  - GateThreeFinish
+  - DoubleJump
+  - Dash
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Floor
+  - Wall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Collisions
+    uniqueID: 251988195
+    locked: 0
+  - name: Background
+    uniqueID: 1714770615
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Platforms
+    uniqueID: 3941094995
+    locked: 0
+  - name: Player
+    uniqueID: 3540136267
+    locked: 0
+  - name: UI
+    uniqueID: 3931707051
+    locked: 0
